@@ -1,0 +1,82 @@
+/* ===== ESTILOS GENERALES ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0B1026;
+    color:white;
+}
+
+header{
+    background:#16213E;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+    color:#66FCF1;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.boton{
+    background:#00C897;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:20px;
+}
+
+.boton:hover{
+    background:#009f75;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.tarjeta{
+    background:#16213E;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#16213E;
+}
