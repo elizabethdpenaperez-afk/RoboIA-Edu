@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Participantes</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+.contenedor{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:15px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    margin-top:15px;
+}
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#0F3460;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>👥 Registro de Participantes</h1>
+
+<p>Campamento de Robótica 2026</p>
+
+</header>
+
+<nav class="navbar">
+
+<a href="index.html">🏠 Inicio</a>
+<a href="participantes.html">👥 Participantes</a>
+
+</nav>
+
+<div class="contenedor">
+
+<h2>Registrar participante</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+
+<input type="number" id="edad" placeholder="Edad">
+
+<input type="text" id="grado" placeholder="Grado">
+
+<button onclick="agregarParticipante()">
+
+Guardar
+
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nombre</th>
+
+<th>Edad</th>
+
+<th>Grado</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaParticipantes">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
