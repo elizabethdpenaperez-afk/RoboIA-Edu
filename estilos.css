@@ -115,3 +115,14 @@ transform:scale(1.05);
 background:#1d3557;
 
 }
+.panel{
+
+transition:.3s;
+
+}
+
+.panel:hover{
+
+transform:translateY(-10px);
+
+}
