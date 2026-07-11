@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - RoboIA Edu</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.panel{
+
+    background:white;
+    color:#222;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+
+}
+
+.numero{
+
+    font-size:45px;
+    color:#0F3460;
+    font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📊 Panel General</h1>
+
+<p>Campamento de Robótica 2026</p>
+
+</header>
+
+<nav class="navbar">
+
+<a href="index.html">🏠 Inicio</a>
+
+<a href="dashboard.html">📊 Dashboard</a>
+
+<a href="participantes.html">👥 Participantes</a>
+
+<a href="retos.html">🎮 Retos</a>
+
+</nav>
+
+<section class="dashboard">
+
+<div class="panel">
+
+<h2>👥 Participantes</h2>
+
+<div class="numero">26</div>
+
+</div>
+
+<div class="panel">
+
+<h2>📅 Días</h2>
+
+<div class="numero">8</div>
+
+</div>
+
+<div class="panel">
+
+<h2>🤖 Proyectos</h2>
+
+<div class="numero">5</div>
+
+</div>
+
+<div class="panel">
+
+<h2>🏅 Retos</h2>
+
+<div class="numero">12</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
