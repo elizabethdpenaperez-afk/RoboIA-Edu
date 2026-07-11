@@ -41,5 +41,35 @@ respuesta="Muy buena pregunta. En una próxima versión RoboIA responderá utili
 }
 
 document.getElementById("respuesta").innerHTML=respuesta;
+function agregarParticipante(){
+
+let nombre=document.getElementById("nombre").value;
+let edad=document.getElementById("edad").value;
+let grado=document.getElementById("grado").value;
+
+if(nombre=="" || edad=="" || grado==""){
+    alert("Complete todos los campos.");
+    return;
+}
+
+let fila=`
+<tr>
+<td>${nombre}</td>
+<td>${edad}</td>
+<td>${grado}</td>
+</tr>
+`;
+
+document.getElementById("tablaParticipantes").innerHTML += fila;
+
+document.getElementById("nombre").value="";
+document.getElementById("edad").value="";
+document.getElementById("grado").value="";
+}
+
+
+
+
+  
 
 }
