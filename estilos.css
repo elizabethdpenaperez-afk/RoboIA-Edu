@@ -102,3 +102,16 @@ footer{
 .navbar a:hover{
     color:#66FCF1;
 }
+.tarjeta{
+
+cursor:pointer;
+
+}
+
+.tarjeta:hover{
+
+transform:scale(1.05);
+
+background:#1d3557;
+
+}
