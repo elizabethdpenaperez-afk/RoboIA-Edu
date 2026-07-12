@@ -138,3 +138,23 @@ footer{
 
     background:rgba(0,0,0,.2);
 }
+nav{
+    background:#18264d;
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    padding:18px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
