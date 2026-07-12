@@ -1,4 +1,6 @@
-/* ===== ESTILOS GENERALES ===== */
+/* ==========================
+   ESTILO GENERAL
+========================== */
 
 *{
     margin:0;
@@ -7,122 +9,132 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0B1026;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
     color:white;
+    min-height:100vh;
 }
 
+/* ==========================
+   ENCABEZADO
+========================== */
+
 header{
-    background:#16213E;
-    padding:20px;
     text-align:center;
+    padding:40px;
 }
 
 header h1{
-    font-size:40px;
-    color:#66FCF1;
+    font-size:3rem;
 }
 
 header p{
     margin-top:10px;
-    font-size:20px;
+    font-size:1.2rem;
 }
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
+/* ==========================
+   CONTENEDOR
+========================== */
 
-.hero h2{
-    font-size:36px;
-    margin-bottom:20px;
-}
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 
-.hero p{
-    font-size:20px;
-    margin-bottom:30px;
-}
-
-.boton{
-    background:#00C897;
-    color:white;
-    text-decoration:none;
-    padding:15px 30px;
-    border-radius:10px;
-    font-size:20px;
-}
-
-.boton:hover{
-    background:#009f75;
-}
-
-.menu{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    padding:40px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px;
 }
+
+/* ==========================
+   TARJETAS
+========================== */
 
 .tarjeta{
-    background:#16213E;
+
+    background:white;
+    color:#1f2937;
+
+    border-radius:20px;
+
     padding:25px;
-    border-radius:15px;
+
     text-align:center;
+
+    transition:0.4s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.tarjeta img{
+
+    width:90px;
+
+    margin-bottom:15px;
+}
+
+.tarjeta h2{
+
+    margin-bottom:10px;
+}
+
+.tarjeta p{
+
+    margin-bottom:20px;
+
+    line-height:1.5;
+}
+
+/* ==========================
+   BOTÓN
+========================== */
+
+.boton{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
     transition:.3s;
 }
 
-.tarjeta:hover{
-    transform:translateY(-8px);
+.boton:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.05);
 }
+
+/* ==========================
+   PIE DE PÁGINA
+========================== */
 
 footer{
+
     text-align:center;
-    padding:20px;
-    background:#16213E;
-}
-/* ===== MENÚ DE NAVEGACIÓN ===== */
 
-.navbar{
-    background:#0F3460;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding:15px;
-    flex-wrap:wrap;
-}
+    padding:30px;
 
-.navbar a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    transition:0.3s;
-}
+    margin-top:40px;
 
-.navbar a:hover{
-    color:#66FCF1;
-}
-.tarjeta{
-
-cursor:pointer;
-
-}
-
-.tarjeta:hover{
-
-transform:scale(1.05);
-
-background:#1d3557;
-
-}
-.panel{
-
-transition:.3s;
-
-}
-
-.panel:hover{
-
-transform:translateY(-10px);
-
+    background:rgba(0,0,0,.2);
 }
