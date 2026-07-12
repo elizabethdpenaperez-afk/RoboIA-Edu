@@ -160,9 +160,11 @@ nav a:hover{
 }
 .robot{
     font-size:120px;
-    margin:20px 0;
     display:inline-block;
-    animation: flotar 3s ease-in-out infinite;
+    margin:20px auto;
+    text-align:center;
+    animation: flotar 1s infinite alternate;
+}
 }
 
 @keyframes flotar{
