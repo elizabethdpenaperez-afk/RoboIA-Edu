@@ -158,12 +158,19 @@ nav a{
 nav a:hover{
     color:#00e5ff;
 }
-.robot{
-    font-size:120px;
-    display:inline-block;
-    margin:20px auto;
-    text-align:center;
-    animation: flotar 1s infinite alternate;
+@keyframes flotar{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
 }
 }
 
